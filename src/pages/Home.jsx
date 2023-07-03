@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./pagesCss.css";
 import "../App.css";
 import Card1 from "../components/Card1";
@@ -6,7 +6,12 @@ import data from "../utils/homeCardData";
 import CourceCard from "../components/CourceCard";
 import courceData from "../utils/courcesCardDiv";
 import studentImage from "../assets/student.png"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 export default function Home() {
+  useEffect(() =>{
+    AOS.init({duration : 1000})
+  },[])
   return (
     <>
       <div className="home_main_div">
@@ -25,7 +30,7 @@ export default function Home() {
         </h2>
       </div>
       <div className="container pt-3 px-6 m-auto">
-        <div className="grid grid-cols-4 gap-6 md:grid-cols-8 lg:grid-cols-12">
+        <div className="grid grid-cols-4 gap-6 md:grid-cols-8 lg:grid-cols-12" data-aos="fade-up">
           {data.map((singleData) => {
             return (
               <div className="col-span-4">
@@ -40,7 +45,7 @@ export default function Home() {
       <section>
         <div className="container px-6 m-auto">
           <div className="grid grid-cols-4 gap-6 md:grid-cols-8 lg:grid-cols-12">
-            <div className="col-span-4 lg:col-span-6">
+            <div className="col-span-4 lg:col-span-6" data-aos="fade-left">
               <div className="home_SecondMain_Data flex justify-center items-start flex-col" >
               <h2 className=" text-2xl text-orange-500 font-medium">Best Courses For Students</h2>
               <h1 className="  md:text-4xl text-3xl txtColorHeatin font-semibold WorkSans">
@@ -53,7 +58,7 @@ export default function Home() {
               </p>
               </div>
             </div>
-            <div className="col-span-4 lg:col-span-6">
+            <div className="col-span-4 lg:col-span-6" data-aos="fade-right">
               <div>
                 <img src={studentImage} alt="" className="homeImage1"/>
               </div>
