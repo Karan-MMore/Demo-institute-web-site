@@ -1,0 +1,29 @@
+.teamSwiper{
+    width: 100%;
+    height: 300px;
+    background-color: #070A52;
+    position: relative;
+}
+.swiper {
+  width: 90%;
+  height: 100%;
+  background-color: #070A52;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #070A52;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
