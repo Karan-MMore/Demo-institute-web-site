@@ -10,7 +10,11 @@
 .Roboto{font-family: 'Roboto', sans-serif;}
 .WorkSans{font-family: 'Work Sans', sans-serif;}
 
-
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
 .cardDiv{
     width: 400px;
 }
