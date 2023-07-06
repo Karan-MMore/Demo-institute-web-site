@@ -10,7 +10,7 @@ export default function Card1(props) {
   return (
     <>
       {/*<!-- Component: User profile card --> */}
-      <div className="overflow-hidden rounded bg-white text-center text-slate-500 shadow-md shadow-slate-200 hover:shadow-orange-300" data-aos="zoom-in">
+      <div className="overflow-hidden rounded bg-white text-center text-slate-500  shadow-xl shadow-slate-200 hover:shadow-emerald-100" data-aos="zoom-in">
         {/*  <!-- Image --> */}
         <figure className="p-6 pb-0">
           <span className="relative inline-flex h-20 w-20 items-center justify-center rounded-full text-white">

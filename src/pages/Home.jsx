@@ -21,7 +21,7 @@ export default function Home() {
             Welcome to Arrow Technologies and Solutions
           </h1>
           <p className="text-2xl pt-3 text-white Poppins">
-            INSTITUTE FOR IT </p><p className="text-2xl pt-3 text-orange-600 Poppins"> <span>
+            INSTITUTE FOR IT </p><p className="text-2xl pt-3 text-orange-600 Poppins"> <span className="fontItim text-3xl">
               <Typewriter
                   words={['TRAINING', 'DEVELOPEMENT']}
                   loop={false}
@@ -36,7 +36,7 @@ export default function Home() {
         </div>
       </div>
       <div className="  flex justify-center items-center sub_heading_div">
-        <h2 className=" text-3xl WorkSans font-bold text-orange-500">
+        <h2 className=" text-3xl fontItim font-bold text-orange-500">
           We Have
         </h2>
       </div>
@@ -80,7 +80,7 @@ export default function Home() {
 
       </div>
       <div className="  flex justify-center items-center sub_heading_div">
-        <h2 className=" text-3xl WorkSans font-bold text-orange-500 ">
+        <h2 className=" text-3xl fontItim font-bold text-orange-500 ">
           Our Top Cources
         </h2>
       </div>
