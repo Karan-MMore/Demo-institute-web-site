@@ -6,6 +6,7 @@ import data from "../utils/homeCardData";
 import CourceCard from "../components/CourceCard";
 import courceData from "../utils/courcesCardDiv";
 import studentImage from "../assets/student.png"
+import heroIMG from "../assets/itImage.avif"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Typewriter } from 'react-simple-typewriter'
@@ -15,7 +16,7 @@ export default function Home() {
   },[])
   return (
     <>
-      <div className="home_main_div">
+      {/* <div className="home_main_div">
         <div className=" home_heading_div flex justify-center items-center flex-col">
           <h1 className=" text-5xl text-white Poppins text-center">
             Welcome to Arrow Technologies and Solutions
@@ -34,9 +35,41 @@ export default function Home() {
             </span>
           </p>
         </div>
+      </div> */}
+ <div className="hero_section_home">
+  <div className="container hero_div_content px-6 m-auto">
+    <div className="grid grid-cols-4 gap-6 sm:grid-cols-4 md:grid-cols-8 lg:grid-cols-12">
+      <div className="col-span-4 sm:col-span-4 md:col-span-4 lg:col-span-7">
+        <h1 className="text-5xl pt-12 text-white Poppins">
+          Welcome to Arrow Technologies and Solutions
+        </h1>
+        <p className="text-2xl pt-3 pb-5 text-white Poppins">
+          INSTITUTE FOR IT{" "} <br />
+          <span className="fontItim text-3xl text-orange-400">
+            <Typewriter
+              words={["TRAINING", "DEVELOPEMENT"]}
+              loop={false}
+              cursor
+              cursorStyle="|"
+              typeSpeed={70}
+              deleteSpeed={50}
+              delaySpeed={1000}
+            ></Typewriter>
+          </span>
+        </p>
+        <div class="wrapper">
+          <a href="#" className="anchor"><span>CONTACT US|</span></a>
+        </div>
       </div>
+      <div className="col-span-4 sm:col-span-4 md:col-span-4 lg:col-span-5 flex justify-center items-center">
+        <img src={heroIMG} alt="" className="heroImg" />
+      </div>
+    </div>
+  </div>
+  
+</div>
       <div className="  flex justify-center items-center sub_heading_div">
-        <h2 className=" text-3xl fontItim font-bold text-orange-500">
+        <h2 className=" text-3xl fontItim font-bold text-black">
           We Have
         </h2>
       </div>
@@ -59,11 +92,11 @@ export default function Home() {
             <div className="col-span-4 lg:col-span-6" >
               <div className="home_SecondMain_Data flex justify-center items-start flex-col" >
               <h2 className=" text-2xl text-orange-500 font-medium">Best Courses For Students</h2>
-              <h1 className="  md:text-4xl text-3xl txtColorHeatin font-semibold WorkSans">
+              <h1 className="  md:text-4xl text-3xl txtColorHeatin font-semibold fontItim">
                 BUILD YOUR CAREER WITH <br />
                 ARROW TECHNOLOGIES
               </h1>
-              <p className=" text-xl text-white font-normal">
+              <p className=" text-xl text-black font-normal">
               Arrow Technologies and Solutions For Campus Student Plan Helps You Build Skills To Add
                 To Your Resume With Unlimited Guided Projects
               </p>
@@ -80,7 +113,7 @@ export default function Home() {
 
       </div>
       <div className="  flex justify-center items-center sub_heading_div">
-        <h2 className=" text-3xl fontItim font-bold text-orange-500 ">
+        <h2 className=" text-3xl fontItim font-bold text-black ">
           Our Top Cources
         </h2>
       </div>

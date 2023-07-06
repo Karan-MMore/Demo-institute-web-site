@@ -8,6 +8,21 @@
     background-position: center;
     background-attachment: fixed;
 }
+.hero_section_home{
+    width: 100%;
+    /* height: 500px; */
+    background: rgb(18,50,225);
+    background: linear-gradient(140deg, rgba(18,50,225,1) 9%, rgba(68,246,250,1) 100%);
+    /* border-bottom-left-radius: 50% 22%;
+    border-bottom-right-radius: 50% 22%; */
+}
+.heroImg{
+    height: 400px;
+    width: 400px;
+}
+.hero_div_content{
+    height: 100%;
+}
 .home_heading_div{
     width: 100%;
     height: 100%;
@@ -45,7 +60,7 @@
 }
 .home_SecondMain_div{
     width: 100%;
-    background-color: #070A52;
+    background-color: #E1E5EA;
     margin-top: 40px;
 }
 .homeImage1{
@@ -58,7 +73,7 @@
     
 }
 .txtColorHeatin{
-    color: aqua;
+    color: #931A25;
 }
 .txtColorSub{
     color:#FB2576
@@ -99,3 +114,13 @@
         
     }
   }
+
+  .curved {
+    position: relative;
+    background: #2c3e50;
+    height: 50vh;
+    border-bottom-left-radius: 50% 22%;
+    border-bottom-right-radius: 50% 22%;
+  }
+
+ 
