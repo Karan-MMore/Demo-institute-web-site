@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 // import img1 from '../assets/certifiedpng.png'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 export default function Card1(props) {
   const { heading, image } = props.value;
+  useEffect(() =>{
+    AOS.init({duration : 1000})
+  },[])
   return (
     <>
       {/*<!-- Component: User profile card --> */}
-      <div className="overflow-hidden rounded bg-white text-center text-slate-500 shadow-md shadow-slate-200 hover:shadow-orange-300">
+      <div className="overflow-hidden rounded bg-white text-center text-slate-500 shadow-md shadow-slate-200 hover:shadow-orange-300" data-aos="zoom-in">
         {/*  <!-- Image --> */}
         <figure className="p-6 pb-0">
           <span className="relative inline-flex h-20 w-20 items-center justify-center rounded-full text-white">
