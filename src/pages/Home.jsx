@@ -8,6 +8,7 @@ import courceData from "../utils/courcesCardDiv";
 import studentImage from "../assets/student.png"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { Typewriter } from 'react-simple-typewriter'
 export default function Home() {
   useEffect(() =>{
     AOS.init({duration : 1000})
@@ -16,11 +17,21 @@ export default function Home() {
     <>
       <div className="home_main_div">
         <div className=" home_heading_div flex justify-center items-center flex-col">
-          <h1 className=" text-5xl text-white Poppins">
+          <h1 className=" text-5xl text-white Poppins text-center">
             Welcome to Arrow Technologies and Solutions
           </h1>
           <p className="text-2xl pt-3 text-white Poppins">
-            INSTITUTE FOR IT TRAINING AND DEVELOPMENT
+            INSTITUTE FOR IT </p><p className="text-2xl pt-3 text-orange-600 Poppins"> <span>
+              <Typewriter
+                  words={['TRAINING', 'DEVELOPEMENT']}
+                  loop={false}
+                  cursor
+                  cursorStyle='|'
+                  typeSpeed={70}
+                  deleteSpeed={50}
+                  delaySpeed={1000}
+              ></Typewriter>
+            </span>
           </p>
         </div>
       </div>
@@ -29,8 +40,8 @@ export default function Home() {
           We Have
         </h2>
       </div>
-      <div className="container pt-3 px-6 m-auto">
-        <div className="grid grid-cols-4 gap-6 md:grid-cols-8 lg:grid-cols-12" >
+      <div className="container pt-3 px-6 m-auto" data-aos="fade-up">
+        <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-6" >
           {data.map((singleData) => {
             return (
               <div className="col-span-4">
