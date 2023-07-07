@@ -39,7 +39,7 @@ export default function About() {
                 Welcome to Arrow Technologies and Solutions
               </h2>
               <br />
-              <p className=" text-xl font-medium">
+              <p className=" text-xl font-normal">
                 Arrow technologies & solutions is one of the few IT
                 professionals. Here, we offer training and learning labs that
                 are tailored to provide solutions to help increase the
@@ -47,7 +47,7 @@ export default function About() {
                 transport, and banking.
               </p>
               <br />
-              <p className=" text-xl font-medium">
+              <p className=" text-xl font-normal">
                 We envision delivering sustainable human capital for the future.
                 We are committed to create a strong and continuous improvement
                 in human capital by virtue of current updated technologies. The
