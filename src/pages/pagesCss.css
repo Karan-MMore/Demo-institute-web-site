@@ -60,7 +60,7 @@
 }
 .home_SecondMain_div{
     width: 100%;
-    background-color: #E1E5EA;
+    /* background-color: #E5E4E2; */
     margin-top: 40px;
 }
 .homeImage1{
@@ -141,6 +141,12 @@
     100% {
       transform: translateY(0);
     }
+  }
+
+
+  .heading_content{
+    height: 100%;
+
   }
 
  

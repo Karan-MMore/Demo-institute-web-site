@@ -5,7 +5,7 @@ export default function CourceCard(props) {
   return (
     <>
       {/*<!-- Component: E-commerce card --> */}
-      <div className="overflow-hidden rounded bg-white hover:bg-amber-100 text-slate-500 shadow-md shadow-slate-200 hover:shadow-orange-300">
+      <div className="overflow-hidden rounded bg-white hover:bg-cyan-50 text-slate-500 shadow-md shadow-slate-200 hover:shadow-xl">
         {/*  <!-- Image --> */}
         <figure>
           <img
