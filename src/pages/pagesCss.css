@@ -123,4 +123,24 @@
     border-bottom-right-radius: 50% 22%;
   }
 
+
+  .heroImg {
+    width: 100%;
+    height: auto;
+    position: relative;
+    animation: bounce 1s infinite;
+  }
+  
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
  
